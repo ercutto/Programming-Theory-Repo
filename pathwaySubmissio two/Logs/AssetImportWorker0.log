@@ -187,3 +187,56 @@ System memory in use after: 57.3 MB.
 Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1564.
 Total: 1.577700 ms (FindLiveObjects: 0.133800 ms CreateObjectMapping: 0.049300 ms MarkObjects: 1.380200 ms  DeleteObjects: 0.012400 ms)
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000563 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.798 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.18 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1109 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 57.1 MB.
+System memory in use after: 57.2 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1567.
+Total: 1.855100 ms (FindLiveObjects: 0.133700 ms CreateObjectMapping: 0.037700 ms MarkObjects: 1.666000 ms  DeleteObjects: 0.015800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1543.537206 seconds.
+  path: Assets/Prefabs
+  artifactKey: Guid(d1837b4f2aaa1cf41974accedef1ffd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs using Guid(d1837b4f2aaa1cf41974accedef1ffd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd939f67fd2b325dc501f530888172f28') in 0.010634 seconds
+  Import took 0.012829 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.117789 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ccc74f0821a6055266e48e72a58e3bc') in 0.023893 seconds
+  Import took 0.028244 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.387734 seconds.
+  path: Assets/Prefabs/Cube.prefab
+  artifactKey: Guid(b165c43e6d1b445478d130819246294d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cube.prefab using Guid(b165c43e6d1b445478d130819246294d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '889fc6aac8d82c764699c50560dc576e') in 0.095236 seconds
+  Import took 0.097473 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005937 seconds.
+  path: Assets/Prefabs/Cube.prefab
+  artifactKey: Guid(b165c43e6d1b445478d130819246294d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cube.prefab using Guid(b165c43e6d1b445478d130819246294d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '889fc6aac8d82c764699c50560dc576e') in 0.010426 seconds
+  Import took 0.012647 seconds .
+
