@@ -4,32 +4,54 @@ using UnityEngine;
 
 public class Shapes : MonoBehaviour
 {
-    public float speed { get; private set; } = 1f;//encapsulated
-    public float jumpSpeed { get; private set; } = 2f;//encapsulated
-
-    // Start is called before the first frame update
+    public virtual float maxDistance { get; set; } = 20f;
+    public float speed = 1f;
+    public float Speed
+    {
+        get { return speed; }
+        set { speed = value; }
+    }
+    public float jumpSpeed = 1f;
+    public void Awake()
+    {
+        if (jumpSpeed<0)
+        {
+            Debug.LogError("Jump speed cant be less than 0");
+        }
+        
+    }
     void Start()
     {
         
     }
-
-    // Update is called once per frame
-    void Update()
+    public  void Update()
     {
-        Move();
+     
+        if (transform.position.z > maxDistance)
+        {
+            speed = -1;
+        }
+        else if (transform.position.z < -maxDistance)
+        {
+            speed = 1;
+        }
         StartCoroutine(JumpAgain());
-    }
+
+    }   
     public virtual void Move()//abstration will be owerrited for every object in shapes class
     {
-
+      
     }
+
     public virtual void Jump()//abstration will be owerrited for every object in shapes class
     {
 
     }
+
     IEnumerator JumpAgain()
     {
-        yield return new WaitForSeconds(3);
         Jump();
+        yield return new WaitForSeconds(5);
+        Move();
     }
 }
